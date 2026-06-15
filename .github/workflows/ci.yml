@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - 'bucket/**'
+  pull_request:
+    paths:
+      - 'bucket/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate manifests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest JSON
+        shell: pwsh
+        run: |
+          $failed = $false
+          Get-ChildItem bucket -Filter *.json | ForEach-Object {
+            try {
+              Get-Content $_.FullName -Raw | ConvertFrom-Json | Out-Null
+              Write-Host "OK: $($_.Name)"
+            } catch {
+              Write-Host "INVALID: $($_.Name) - $($_.Exception.Message)"
+              $failed = $true
+            }
+          }
+          if ($failed) { exit 1 }

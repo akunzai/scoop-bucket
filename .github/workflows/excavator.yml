@@ -1,0 +1,24 @@
+name: Excavator
+
+# Keeps the bucket's manifests in sync with upstream releases via checkver /
+# autoupdate. Scoop's official excavator bot only services the official buckets,
+# so third-party buckets self-host this scheduled run.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
