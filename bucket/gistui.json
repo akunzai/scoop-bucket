@@ -1,14 +1,14 @@
 {
-    "version": "0.15.0",
+    "version": "0.15.1",
     "description": "A terminal UI for managing GitHub Gists",
     "homepage": "https://github.com/akunzai/gistui",
     "license": "MIT",
     "depends": "main/gh",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/akunzai/gistui/releases/download/v0.15.0/gistui-v0.15.0-x86_64-pc-windows-msvc.zip",
-            "hash": "4604a9d3294ea0661578e720112bcbf754507848cdc918bf8d3b93b7308ebbfb",
-            "extract_dir": "gistui-v0.15.0-x86_64-pc-windows-msvc"
+            "url": "https://github.com/akunzai/gistui/releases/download/v0.15.1/gistui-v0.15.1-x86_64-pc-windows-msvc.zip",
+            "hash": "ade2c1cb080be3893dd7b11c9dbe9d5dddb5f2e06defd1bc6a4c38c3bbc8e990",
+            "extract_dir": "gistui-v0.15.1-x86_64-pc-windows-msvc"
         }
     },
     "bin": "gistui.exe",
