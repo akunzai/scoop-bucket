@@ -1,13 +1,13 @@
 {
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A fast, cross-platform terminal user interface (TUI) directory comparison tool",
   "homepage": "https://github.com/akunzai/duodiff",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/akunzai/duodiff/releases/download/v0.5.1/duodiff-v0.5.1-x86_64-pc-windows-msvc.zip",
-      "hash": "56041975d9101989e20999993f2e8b9b776a0a169ed4100419aee68d86f3b9e2",
-      "extract_dir": "duodiff-v0.5.1-x86_64-pc-windows-msvc"
+      "url": "https://github.com/akunzai/duodiff/releases/download/v0.6.0/duodiff-v0.6.0-x86_64-pc-windows-msvc.zip",
+      "hash": "0b1068fa4effcb608241aa0246799335dfb5231b3cc503869c10c0fad3f12630",
+      "extract_dir": "duodiff-v0.6.0-x86_64-pc-windows-msvc"
     }
   },
   "bin": "duodiff.exe",
