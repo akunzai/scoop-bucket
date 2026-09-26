@@ -1,0 +1,38 @@
+{
+    "version": "0.18.0",
+    "description": "Keep skills in sync across AI coding agents",
+    "homepage": "https://akunzai.github.io/skills-manager/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/akunzai/skills-manager/releases/download/v0.18.0/skills_windows_amd64.zip",
+            "hash": "3654e4a2940f09d97d8dd0b69be7a91a3c831aa3b327e330ce93310a50460f95"
+        },
+        "arm64": {
+            "url": "https://github.com/akunzai/skills-manager/releases/download/v0.18.0/skills_windows_arm64.zip",
+            "hash": "8ef103dfd32bfb92df749e766fcaec1f70b88bbbf03850a94ba4334765dd703a"
+        }
+    },
+    "bin": "skills.exe",
+    "checkver": {
+        "github": "https://github.com/akunzai/skills-manager"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/akunzai/skills-manager/releases/download/v$version/skills_windows_amd64.zip",
+                "hash": {
+                    "url": "$baseurl/checksums.txt",
+                    "regex": "([a-fA-F0-9]{64})\\s+skills_windows_amd64\\.zip"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/akunzai/skills-manager/releases/download/v$version/skills_windows_arm64.zip",
+                "hash": {
+                    "url": "$baseurl/checksums.txt",
+                    "regex": "([a-fA-F0-9]{64})\\s+skills_windows_arm64\\.zip"
+                }
+            }
+        }
+    }
+}
