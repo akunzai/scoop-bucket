@@ -1,16 +1,16 @@
 {
-    "version": "0.19.0",
+    "version": "0.20.0",
     "description": "Keep skills in sync across AI coding agents",
     "homepage": "https://akunzai.github.io/skills-manager/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/akunzai/skills-manager/releases/download/v0.19.0/skills_windows_amd64.zip",
-            "hash": "bad654b605eb766e2cf89ed701abb91cc2829491886edcf4f28f8285beb8e71e"
+            "url": "https://github.com/akunzai/skills-manager/releases/download/v0.20.0/skills_windows_amd64.zip",
+            "hash": "f11380c7d66512f9d2e6c0634c15946b50f16b71202b35e449a2cccc480addb4"
         },
         "arm64": {
-            "url": "https://github.com/akunzai/skills-manager/releases/download/v0.19.0/skills_windows_arm64.zip",
-            "hash": "b757e06ced8110ed1ae9defa655d66d24be0a70556611da7f42936761c9d8b2a"
+            "url": "https://github.com/akunzai/skills-manager/releases/download/v0.20.0/skills_windows_arm64.zip",
+            "hash": "ecc7489779d444e3d69c50a47452a85e3a8d04cd97151e559eba32b6563ea0c5"
         }
     },
     "bin": "skills.exe",
